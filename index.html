@@ -18,26 +18,27 @@
             background-color: #000;
             color: #fff;
             font-family: Helvetica, Arial, sans-serif;
-            overflow: hidden; /* disable scrolling / rubberband effect on mobile */
-            width:50vw;
-			height:100vh;
-			z-index:-1;
+            height:100vh;
+			
         }
 
         canvas {
             display: block;
             position: absolute;
             outline:0;
+			width:50vh;
+			height:100vh;
+			z-index:-1;
         }
 
         * {
-            /* disable on touch highlights of html elements, especially on mobile! */
+            /* disable on touch highlights of html elements, especially on mobile! 
             -webkit-tap-highlight-color: transparent;
             -webkit-touch-callout: none;
             -webkit-user-select: none;
             -moz-user-select: none;
             -ms-user-select: none;
-            user-select: none;
+            user-select: none;*/
         }
 
     </style>
