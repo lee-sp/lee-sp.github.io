@@ -33,6 +33,13 @@ body {
 	line-height: 1;
 }
 
+#glcanvas {
+    pointer-events: all;    
+}
+.actions.special {
+    pointer-events: all;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -117,6 +124,76 @@ input, select, textarea {
 			-ms-transition: none !important;
 			transition: none !important;
 		}
+
+
+/* Nav */
+
+	#nav {
+		background-color: #282828;
+		text-align: center;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		z-index: 10000;
+		cursor: default;
+		height: 3.5em;
+		line-height: 3.5em;
+	}
+
+		#nav ul {
+			margin-bottom: 0;
+			list-style: none;
+			padding-left: 0;
+		}
+
+		#nav li {
+			display: inline-block;
+			padding-left: 0;
+		}
+
+		#nav a {
+			-moz-transition: background-color .2s ease-in-out;
+			-webkit-transition: background-color .2s ease-in-out;
+			-ms-transition: background-color .2s ease-in-out;
+			transition: background-color .2s ease-in-out;
+			position: relative;
+			display: block;
+			color: #fff;
+			text-decoration: none;
+			outline: 0;
+			font-weight: 600;
+			border-radius: 8px;
+			color: #fff;
+			height: 2.5em;
+			line-height: 2.5em;
+			padding: 0 1.25em;
+		}
+
+			#nav a:hover {
+				color: #fff !important;
+				background: #383838;
+			}
+
+			#nav a.active {
+				background: #484848;
+			}
+
+				#nav a.active:before {
+					content: '';
+					display: block;
+					position: absolute;
+					bottom: -0.6em;
+					left: 50%;
+					margin-left: -0.75em;
+					border-left: solid 0.75em transparent;
+					border-right: solid 0.75em transparent;
+					border-top: solid 0.6em #282828;
+				}
+
+
+
+
 
 /* Typography */
 
@@ -3235,7 +3312,7 @@ input, select, textarea {
 			position: absolute;
 			top: 0;
 			width: 50vw;
-			z-index: -1;
+			z-index: -2;
 		}
 
 		#wrapper section {
@@ -3253,6 +3330,7 @@ input, select, textarea {
 				grid-area: header;
 				justify-self: end;
 				text-align: right;
+				pointer-events: none;
 			}
 
 				#wrapper section > header h2 {
@@ -3740,7 +3818,23 @@ input, select, textarea {
 			#wrapper .copyright {
 				padding: 0 2rem 2rem 2rem;
 			}
+			/* Nav */
 
+			#nav {
+				height: 44px;
+				line-height: 44px;
+			}
+
+				#nav a {
+					padding: 0 0.75em;
+					height: inherit;
+					line-height: inherit;
+					border-radius: 0;
+				}
+
+					#nav a:hover {
+						background-color: transparent;
+					}
 		}
 
 		@media screen and (max-width: 360px) {

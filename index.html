@@ -18,22 +18,21 @@
             background-color: #000;
             color: #fff;
             font-family: Helvetica, Arial, sans-serif;
+			
             height:100vh;
 			
         }
 
         canvas {
             display: block;
-            position: fixed;
-            outline:0;
-			top: 0px;
-			left: 0px;
-			width:50vh;
-			height:100vh;
-			z-index:-1;
+			
+			width: 100vw;
+			height: 100vh;
+			
+			z-index:0;
         }
 
-        * {
+        {
             /* disable on touch highlights of html elements, especially on mobile! 
             -webkit-tap-highlight-color: transparent;
             -webkit-touch-callout: none;
@@ -46,10 +45,24 @@
     </style>
 	</head>
 	<body class="is-preload">
+	
+	<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="#intro">intro</a></li>
+					<li><a href="#first">First</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+
+	
+		<canvas id="glcanvas" width="100vw" height="100vh" tabindex="1"></canvas>
+
 
 		<!-- Wrapper -->
 			<div id="wrapper">
- <canvas id="glcanvas" width="50vw" height="100vh" tabindex="1"></canvas>
+
 				<!-- Intro -->
 					<section class="intro">
 						<header>
