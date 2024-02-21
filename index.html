@@ -18,7 +18,6 @@
             background-color: #000;
             color: #fff;
             font-family: Helvetica, Arial, sans-serif;
-			
             height:100vh;
 			
         }
@@ -26,20 +25,18 @@
         canvas {
             display: block;
 			
-			width: 100vw;
-			height: 100vh;
-			
+			width: 50vw;
 			z-index:0;
         }
 
         {
-            /* disable on touch highlights of html elements, especially on mobile! 
+            /* disable on touch highlights of html elements, especially on mobile! */
             -webkit-tap-highlight-color: transparent;
             -webkit-touch-callout: none;
             -webkit-user-select: none;
             -moz-user-select: none;
             -ms-user-select: none;
-            user-select: none;*/
+            user-select: none;
         }
 
     </style>
@@ -66,7 +63,7 @@
 				<!-- Intro -->
 					<section class="intro">
 						<header>
-							<h1>Paradigm Shift</h1>
+							<h1>Paradigm Shifts</h1>
 							<p>A free responsive site template designed by <a href="https://twitter.com/ajlkn">@ajlkn</a> / <a href="https://html5up.net">HTML5 UP</a></p>
 							<ul class="actions">
 								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
@@ -539,7 +536,7 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
                 "assetPath": "assets/",
                 "jsPath": "js/",
                 "glCanvasId": "glcanvas",
-                "glCanvasResizeToWindow": true,
+                "glCanvasResizeToWindow": false,
                 "onError": showError,
                 "onPatchLoaded": patchInitialized,
                 "onFinishedLoading": patchFinishedLoading,
