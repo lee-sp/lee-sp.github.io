@@ -139,6 +139,9 @@ input, select, textarea {
 		cursor: default;
 		height: 3.5em;
 		line-height: 3.5em;
+		-webkit-user-select: none;
+  		-moz-user-select: none;
+ 		user-select: none;
 	}
 
 		#nav ul {
@@ -150,6 +153,9 @@ input, select, textarea {
 		#nav li {
 			display: inline-block;
 			padding-left: 0;
+			-webkit-user-select: none;
+  		-moz-user-select: none;
+ 		user-select: none;
 		}
 
 		#nav a {
@@ -273,6 +279,9 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2rem 0;
+		-webkit-user-select: none;
+  		-moz-user-select: none;
+ 		user-select: none;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -283,6 +292,9 @@ input, select, textarea {
 		line-height: 1.75;
 		margin: 0 0 1.5rem 0;
 		text-transform: uppercase;
+		-webkit-user-select: none;
+  		-moz-user-select: none;
+ 		user-select: none;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -298,6 +310,9 @@ input, select, textarea {
 		line-height: 1.1;
 		margin: 0 0 1.5rem 0;
 		text-transform: none;
+		-webkit-user-select: none;
+  		-moz-user-select: none;
+ 		user-select: none;
 	}
 
 	h2 {
@@ -305,22 +320,37 @@ input, select, textarea {
 		font-weight: 800;
 		margin: 0 0 2rem 0;
 		color: #ffffff;
+		-webkit-user-select: none;
+  		-moz-user-select: none;
+ 		user-select: none;
 	}
 
 	h3 {
 		font-size: 0.875rem;
+		-webkit-user-select: none;
+  		-moz-user-select: none;
+ 		user-select: none;
 	}
 
 	h4 {
 		font-size: 0.875rem;
+		-webkit-user-select: none;
+  		-moz-user-select: none;
+ 		user-select: none;
 	}
 
 	h5 {
 		font-size: 0.75rem;
+		-webkit-user-select: none;
+  		-moz-user-select: none;
+ 		user-select: none;
 	}
 
 	h6 {
 		font-size: 0.625rem;
+		-webkit-user-select: none;
+  		-moz-user-select: none;
+ 		user-select: none;
 	}
 
 	@media screen and (max-width: 736px) {

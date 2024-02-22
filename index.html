@@ -24,8 +24,9 @@
 
         canvas {
             display: block;
-			position: fixed;
-			
+			position: absolute;
+			width: 50vw;
+			height: 100%;
 			z-index:0;
         }
 
@@ -509,7 +510,7 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
                 "assetPath": "assets/",
                 "jsPath": "js/",
                 "glCanvasId": "glcanvas",
-                "glCanvasResizeToWindow": true,
+                "glCanvasResizeToWindow": false,
                 "onError": showError,
                 "onPatchLoaded": patchInitialized,
                 "onFinishedLoading": patchFinishedLoading,
